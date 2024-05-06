@@ -1,5 +1,3 @@
-# нужно сделать настроку типа пароля а также его длину
-
 import random
 import string
 
@@ -15,21 +13,17 @@ def mixedpassword(length):
     for i in range(length):
         
      if answer==1: 
-      fhg = random.choice([LARGletters, SMALLletters, INTEGER])
-      password += random.choice(fhg)
+      RANDchoice = random.choice([LARGletters, SMALLletters, INTEGER])
+      password += random.choice(RANDchoice)
       
      if answer==2:
-       fhg = random.choice([INTEGER])
-       password += random.choice(fhg)
+       RANDchoice = random.choice([INTEGER])
+       password += random.choice(RANDchoice)
           
      if answer==3:
-       fhg = random.choice([LARGletters, SMALLletters])
-       password += random.choice(fhg)
+       RANDchoice = random.choice([LARGletters, SMALLletters])
+       password += random.choice(RANDchoice)
               
-          
     return password
-
-
-
 
 print(mixedpassword(10))
